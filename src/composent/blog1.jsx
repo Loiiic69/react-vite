@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Vape from "/public/img/vape.jpg"
 
 function Blog() {
@@ -16,14 +17,16 @@ function Blog() {
            Découvrez notre article sur la question posé si dessus !
          </p>
          <div className="flex justify-center mx-auto">
-           <button
-             className="hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8">
+           <NavLink
+             className="hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8" to ="/blog2"
+             >
+              
              Voir l'article
-           </button>
-           <button
-             className="ml-4 hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8">
-             Boutique
-           </button>
+           </NavLink>
+           <NavLink className="ml-4 hover:underline bg-white text-gray-800 font-bold rounded-full py-4 px-8" to ="/boutique"
+>
+  Boutique
+</NavLink>
          </div>
        </div>
      </div>

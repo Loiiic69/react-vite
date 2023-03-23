@@ -31,20 +31,30 @@ export function Navbar({ fixed }) {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
-                <a
+                <NavLink
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="/boutique"
+                  to = "/Boutique"
                 >
                   <i className="fa-solid fa-sack-dollar text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Boutique</span>
-                </a>
+                </NavLink>
               </li>
+              
               <li className="nav-item">
-                <a
+                <NavLink
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  to = "/Panier"
+                >
+                  <i className="fa-solid fa-cart-shopping text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Panier</span>
+                </NavLink>
+              </li>
+              
+              <li className="nav-item">
+                <NavLink
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  to = "/forum"
                 >
                   <i className="fa-solid fa-comments text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Forum</span>
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
